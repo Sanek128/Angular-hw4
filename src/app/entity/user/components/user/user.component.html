@@ -1,0 +1,10 @@
+<div>
+    {{user.id}}
+    {{user.name}}
+    {{user.username}}
+    <!-- <button [routerLink]="['details', user.id]">details</button> -->
+    <!-- <button [routerLink]="['details', user.id]" [state]="{user: user}">details</button> -->
+    <!-- <button (click)="goSomewhere(user.id)">details</button> -->
+    <button [routerLink]="['posts']" [queryParams]="{id: user.id, name: user.name}">details</button>
+    <hr>
+</div>
